@@ -1,15 +1,14 @@
-task 1:
-agent:codex接入deepseek api
+# task 1:
+## agent:
+codex接入deepseek api
 
-安装和配置过程：科学上网下载ccswitch,chatgpt,创建deepseek api接入chatgpt。之后deepseek官方发的公告里已经加入
-了codex,claude code接入deepseek的一键配置方法，于是又换用deepseek官方方法一键配置了codex,claude code。
+## 安装和配置过程：
+科学上网下载ccswitch,chatgpt,创建deepseek api接入chatgpt。之后deepseek官方发的公告里已经加入了codex,claude code接入deepseek的一键配置方法，于是又换用deepseek官方方法一键配置了codex,claude code。
 
-任务内容:优化README.md文件。
-agent修改：：加了项目简介、统一了每个任务的格式、给编译阶段的命令补了注释、把仓库结构图标注得更清楚，同时保留了所有原有的任务要求和自检逻辑；
-git diff:输出了README.md文件，红色的是原版，绿色的修改版，非常清晰地可以看出两版之间地变化。
-达到了我的预期。
+## 任务内容:优化README.md文件。
+agent修改：：加了项目简介、统一了每个任务的格式、给编译阶段的命令补了注释、把仓库结构图标注得更清楚，同时保留了所有原有的任务要求和自检逻辑；git diff:输出了README.md文件，红色的是原版，绿色的修改版，非常清晰地可以看出两版之间地变化。达到了我的预期。
 
-task 2:
+# task 2:
 1.普通聊天AI就只是一个语言模型，没有权限没有工具，看不了电脑上的东西，只能你给他输入，他输出，把修改好的东西给你，
 然会你自己去弄。但是agent并不一样，它在语言模型外层上套了工具+循环，并且还有权限和沙箱。
 2.感知——让模型能“看见”;行动——让模型能“改变”;闭环——让思考能迭代;接口——让模型知道“能用什么”。工具把 Agent 从“只会生成文字的模型”升级成“能感知、能行动、能根据反馈持续干活”的系统，它是模型和真实世界之间的那座桥。
